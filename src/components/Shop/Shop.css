@@ -1,0 +1,65 @@
+
+.shop-container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Display rows of 4 items */
+  align-items: center; /* Vertically center items */
+  margin: auto;
+  font-family: 'Pirate Scroll';
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+  
+.shop-item {
+    text-align: center;
+  }
+  
+.shop-item img {
+    width: 60%; /* Adjust image width */
+    max-height: 300px; /* Adjust image height */
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  
+.item-name {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+.star-coins {
+    margin-top: 5px;
+    color: cyan;
+  }
+  
+
+  
+.enlarged-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    z-index: 1000; /* Ensure the enlarged image appears above other content */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.enlarged-image img {
+    max-width: 90vw; /* Limit the width of the enlarged image */
+    max-height: 90vh; /* Limit the height of the enlarged image */
+    object-fit: contain; /* Ensure the entire image is visible */
+    border-radius: 8px;
+  }
+
+@media screen and (max-width: 768px) {
+    .shop-container {
+      grid-template-columns: repeat(1, 1fr); /* Display items in one column on smaller screens */
+    }
+    .shop-item img{
+      width: 80vw;
+    }
+  }

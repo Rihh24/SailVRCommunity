@@ -1,0 +1,157 @@
+/* Home.css */
+.feed-container{
+    /* background-color: rgb(59,60,53, .6); */
+    margin: auto;
+    height: 100%;
+    width: 80vw;
+    border-radius: .6rem;
+    padding-top: 10px;
+    margin-top: 20px;
+
+}
+
+.feed-container h1{
+    font-family: 'Pirate Scroll';
+    margin-bottom: 20px;
+    color: #56d4f0;
+    font-weight: bolder;
+
+}
+
+
+.post-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 72.3%;
+    padding-top: 10px;
+    background-color: whitesmoke;
+    height: 30%;
+    border-bottom: 1px solid gray;
+
+}
+
+.img-submit{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+
+.img-submit img{
+    cursor: pointer;
+}
+
+.img-submit>input {
+    display: none;
+  }
+
+
+.post-form textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    resize: none;
+}
+
+.post-form input[type="file"] {
+    margin-bottom: 10px;
+  }
+
+.post-form textarea:focus{
+    outline: 0;
+}
+
+.post-form button {
+    padding: 10px 20px;
+    color: #932c2c;
+    background: ghostwhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pirate Scroll';
+  }
+  
+.post-form button:hover {
+    background-color: #0056b3;
+}
+
+.img-submit img {
+    width: 50px; /* Set the width to 50 pixels */
+    height: auto;
+}
+
+
+.post-content {
+    width: 100%; /* Adjust as needed */
+    max-width: 700px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Pirate Scroll';
+    color: black;
+    background: whitesmoke;
+    border-bottom: 1px lightblue solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+  
+.post-content .image-container {
+    width: 60%;
+    max-width: 50%; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+.post-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+.post-content p{
+    max-width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    .feed-container {
+      width: 90%; /* Adjust the width for smaller screens */
+      overflow-x: hidden;
+    }
+  
+    .post-form {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  
+    .img-submit {
+      flex-direction: column; /* Stack the elements vertically */
+      align-items: center; /* Center the items */
+    }
+  
+    .img-submit img {
+      width: 30px; /* Adjust the width of the image */
+    }
+  
+    .post-content {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  
+    .post-content .image-container {
+      width: 100%; /* Adjust the width for smaller screens */
+      max-width: 100%; /* Adjust the max-width for smaller screens */
+      height: auto; /* Auto adjust the height */
+    }
+  
+    .post-content p {
+      max-width: 100%; /* Adjust the max-width for smaller screens */
+    }
+  }
